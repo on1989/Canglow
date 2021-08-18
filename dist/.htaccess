@@ -1,0 +1,66 @@
+#Reformat ETAG
+FileETag MTime Size
+
+#Cache-control Header - HTTP 1.1
+<IfModule mod_headers.c>
+    #Cache 1 Minggu
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-control "max-age:604800"
+    </FilesMatch>
+
+    #Cache 3 Bulan
+    <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf|svg|webp)$">
+        Header set Cache-Control "max-age=86400"
+    </FilesMatch>
+
+    #Cache 1 Bulan
+    <FilesMatch "\.(js|css)$">
+        Header set Cache-Control "max-age=31536000"
+    </FilesMatch>
+</IfModule>
+
+#Expires Header - HTTP 1.0
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresDefault "access"
+    ExpiresByType img/gif "access plus 3 month"
+    ExpiresByType img/png "access plus 3 month"
+    ExpiresByType img/jpg "access plus 3 month"
+    ExpiresByType img/svg "access plus 3 month"
+    ExpiresByType img/webp "access plus 3 month"
+    ExpiresByType img/jpeg "access plus 3 month"
+    ExpiresByType video/mp4 "access plus 3 month"
+    ExpiresByType video/webm "access plus 3 month"
+
+    ExpiresByType text/html "modification plus 1 weeks"
+
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# Wordfence WAF
+
+<Files ".user.ini">
+<IfModule mod_authz_core.c>
+	Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+	Order deny,allow
+	Deny from all
+</IfModule>
+</Files>
+
+# END Wordfence WAF

@@ -1,0 +1,280 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto/Roboto-Regular.eot');
+	src: url('../fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Roboto/Roboto-Regular.woff') format('woff'),
+		 url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
+		 url('../fonts/Roboto/Roboto-Regular.svg#FontName') format('svg');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'FontName';
+	src: url('../fonts/Roboto/Roboto-Bold.eot');
+	src: url('../fonts/Roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Roboto/Roboto-Bold.woff') format('woff'),
+		 url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype'),
+		 url('../fonts/Roboto/Roboto-Bold.svg#FontName') format('svg');
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/Montserrat-Regular.eot');
+	src: url('../fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+		 url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'),
+		 url('../fonts/Montserrat/Montserrat-Regular.svg#FontName') format('svg');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/Montserrat-Medium.eot');
+	src: url('../fonts/Montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Montserrat/Montserrat-Medium.woff') format('woff'),
+		 url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype'),
+		 url('../fonts/Montserrat/Montserrat-Medium.svg#FontName') format('svg');
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/Montserrat-Bold.eot');
+	src: url('../fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
+		 url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'),
+		 url('../fonts/Montserrat/Montserrat-Bold.svg#FontName') format('svg');
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat/Montserrat-BoldItalic.eot');
+	src: url('../fonts/Montserrat/Montserrat-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Montserrat/Montserrat-BoldItalic.woff') format('woff'),
+		 url('../fonts/Montserrat/Montserrat-BoldItalic.ttf') format('truetype'),
+		 url('../fonts/Montserrat/Montserrat-BoldItalic.svg#FontName') format('svg');
+	font-style: italic;
+	font-weight: 700;
+}
+.dfr{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 40px 0;
+}
+.desc-product{
+	width: calc(100% - 532px);
+	padding-left: 60px;
+	.title{
+		font-size: 40px;
+		color: #444444;
+		font-weight: 700;
+		margin-bottom: 30px;
+		span{
+			font-weight: 600;
+			font-size: 16px;
+			color: #619330;
+			display: block;
+		}
+	}
+	.meta{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-bottom: 25px;
+		li{
+			margin-right: 40px;
+			font-weight: 600;
+			font-size: 16px;
+			color: #999999;
+			span{
+				color: #444;
+			}
+		}
+	}
+	p{
+		font-size: 16px;
+		line-height: 1.75;
+		color: #444444;
+		margin-bottom: 10px;
+	}
+}
+.description-product{
+	width: 100%;
+	margin-top: 55px;
+	h2,
+	h3,
+	h4,
+	h5,
+	h6{
+		font-weight: 700;
+		color: #444444;
+		margin-bottom: 10px;
+	}
+	h2{
+		font-size: 28px;
+		padding-bottom:20px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #D3CED2;
+	}
+	h3{
+		font-size: 24px;
+	}
+	h4{
+		font-size: 20px;
+	}
+	h5{
+		font-size: 18px;
+	}
+	h6{
+		font-size: 16px;
+	}
+	p{
+		font-size: 18px;
+		line-height: 1.75;
+		color: #444;
+		margin-bottom: 20px;
+	}
+	table{
+		width: 100%;
+		tr{
+			border-bottom: 1px solid #D3CED2;
+		}
+		th{
+			color: #999;
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 1.75;
+			text-align: left;
+			padding: 10px 25px;
+			text-transform: uppercase;
+		}
+		td{
+			color: #444;
+			font-size: 14px;
+			line-height: 1.75;
+			text-align: left;
+			padding: 10px 25px;
+			&:first-of-type{
+				font-weight: 600;
+			}
+		}
+	}
+	ul{
+		margin-bottom: 20px;
+		li{
+			margin-bottom: 5px;
+			font-size: 18px;
+			line-height: 1.75;
+			color: #444444;
+			span{
+				font-weight: 600;
+			}
+		}
+	}
+}
+.related{
+	padding-bottom: 40px !important;
+	.item{
+		box-shadow: none !important;
+		margin: 0 0 30px !important;
+		border-radius: 0 !important;
+		a{
+			width: 100%;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+		}
+		img{
+			margin: 0 0 15px!important;
+			width: 100% !important;
+			height: 262.5px !important;
+		}
+		h3{
+			font-size: 16px !important;
+			font-weight: 700;
+			color: #444;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+		.button{
+			margin: 10px 0 0 !important;
+		}
+	}
+}
+.gallery-block{
+	max-width: 532px;
+	width: 100%;
+
+	.gallery{
+		padding: 0;
+		.item{
+			height: 532px;
+			width: 100%;
+			padding: 40px;
+			border: 1px solid #D3CED2;
+			border-radius: 6px;
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				object-position: center;
+				margin-bottom: 0;
+			}
+		}
+	}
+	.gallery-nav{
+		padding:0 22.5px;
+		margin-top: 15px;
+		.slick-arrow{
+			transition: all 0.3s ease;
+			&.icon-left-arrow{
+				left: 0;
+			}
+			&.icon-right-arrow{
+				right: 0;
+			}
+			&:before{
+				font-size: 24px;
+				color: #619330;
+			}
+			&:hover{
+				opacity: .6;
+			}
+		}
+		.slick-list{
+			padding: 0 !important;
+		}
+		.item{
+			padding: 10px;
+			height: 107px;
+			border: 1px solid #D3CED2;
+			margin: 0 7.5px;
+			border-radius: 6px;
+			transition: all 0.3s ease;
+			&.slick-current{
+				border-color: #619330;
+			}
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				object-position: center;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+}

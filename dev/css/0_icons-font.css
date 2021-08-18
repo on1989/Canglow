@@ -1,0 +1,135 @@
+/**
+custom-icons Webfont
+*/
+
+@font-face {
+    font-family: 'GOTHIC';
+    src: url('../fonts/GOTHIC.ttf');
+    src: url('../fonts/GOTHIC-icons.eot') format('embedded-opentype'), url('../fonts/GOTHIC-icons.woff2') format('woff2'), url('../fonts/customGOTHICicons.woff') format('woff'), url('../fonts/GOTHIC-icons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'custom-icons';
+    src: url('../fonts/custom-icons.eot?1619193025977');
+    src: url('../fonts/custom-icons.eot?#iefix-1619193025977') format('embedded-opentype'), url('../fonts/custom-icons.woff2?1619193025977') format('woff2'), url('../fonts/custom-icons.woff?1619193025977') format('woff'), url('../fonts/custom-icons.ttf?1619193025977') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+    font-family: 'custom-icons';
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: normal;
+    font-style: normal;
+    speak: none;
+    text-decoration: inherit;
+    font-size: inherit;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*
+Glyphs list
+*/
+
+.icon-arrow-bottom:before {
+        content: '\ea01';
+    }
+    .icon-arrow-left:before {
+        content: '\ea02';
+    }
+    .icon-arrow-right:before {
+        content: '\ea03';
+    }
+    .icon-best-financing:before {
+        content: '\ea04';
+    }
+    .icon-check:before {
+        content: '\ea05';
+    }
+    .icon-clear:before {
+        content: '\ea06';
+    }
+    .icon-close:before {
+        content: '\ea07';
+    }
+    .icon-coin:before {
+        content: '\ea08';
+    }
+    .icon-confirmation:before {
+        content: '\ea09';
+    }
+    .icon-consulting:before {
+        content: '\ea0a';
+    }
+    .icon-coupon:before {
+        content: '\ea0b';
+    }
+    .icon-design:before {
+        content: '\ea0c';
+    }
+    .icon-door:before {
+        content: '\ea0d';
+    }
+    .icon-experience:before {
+        content: '\ea0e';
+    }
+    .icon-fax:before {
+        content: '\ea0f';
+    }
+    .icon-home-stars:before {
+        content: '\ea10';
+    }
+    .icon-huge-selection:before {
+        content: '\ea11';
+    }
+    .icon-left-arrow:before {
+        content: '\ea12';
+    }
+    .icon-mail:before {
+        content: '\ea13';
+    }
+    .icon-marker:before {
+        content: '\ea14';
+    }
+    .icon-message:before {
+        content: '\ea15';
+    }
+    .icon-minus:before {
+        content: '\ea16';
+    }
+    .icon-phone:before {
+        content: '\ea17';
+    }
+    .icon-plus:before {
+        content: '\ea18';
+    }
+    .icon-removing-window:before {
+        content: '\ea19';
+    }
+    .icon-reputation:before {
+        content: '\ea1a';
+    }
+    .icon-right-arrow:before {
+        content: '\ea1b';
+    }
+    .icon-robbery:before {
+        content: '\ea1c';
+    }
+    .icon-star:before {
+        content: '\ea1d';
+    }
+    .icon-tools:before {
+        content: '\ea1e';
+    }
+    .icon-warranty:before {
+        content: '\ea1f';
+    }

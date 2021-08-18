@@ -1,0 +1,255 @@
+$green:#619330;
+$green-light:#B7DA53;
+$white:#fff;
+$Montserrat:'Montserrat', sans-serif;
+$Roboto:'Roboto', sans-serif;
+$orange:#F85B3E;
+$orange-light:#FA8544;
+$gray:#BABABA;
+$black:#000;
+$gray-dark: #323232;
+@mixin transform($x, $y) {
+	-webkit-transform: translate($x, $y);
+	-moz-transform: translate($x, $y);
+	-ms-transform: translate($x,$y);
+	-o-transform: translate($x, $y);
+	transform: translate($x, $y);
+}
+@mixin transition($s, $animation) {
+	-webkit-transition: all $s $animation;
+	-moz-transition: all $s $animation;
+	-ms-transition: all $s $animation;
+	-o-transition: all $s $animation;
+	transition: all $s $animation;
+}
+footer{
+	background: $gray-dark;
+	div.wpcf7-response-output {
+		max-width: 270px;
+	}
+	.location-block{
+		background: #1D1D1D;
+		padding-top: 45px;
+		h4{
+			width: 100%;
+			font-size: 18px;
+			line-height: 22px;
+			color: $white;
+			text-align: center;
+			font-weight: 700;
+			margin-bottom: 30px;
+		}
+		.location-menu{
+			margin-bottom: 75px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: 100%;
+			li{
+				width: calc(100% / 6);
+			}
+			a{
+				color: $white;
+				font-size: 14px;
+				line-height: 17px;
+				display: block;
+				margin-bottom: 10px;
+			}
+		}
+		.copyright{
+			margin-bottom: 50px;
+			width: 100%;
+			text-align: center;
+			color: #797979;
+			font-size: 12px;
+		}
+	}
+	.bottom{
+		padding: 60px 0 60px;
+
+		.homestars{
+			display: none;
+		}
+		.button{
+			font-size: 14px;
+			margin-top: 0;
+			&:before{
+				margin-right: 10px;
+			}
+		}
+		.menu{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			.current_page_item{
+				& > a{
+					color: $green !important;
+					pointer-events: none;
+					&:before{
+						width: 100%;
+					}
+				}
+			}
+			li{
+				a{
+					&:hover{
+						color: $green;
+					}
+				}
+			}
+			.sub-menu{
+				display: none;
+			}
+			li{
+				margin-right: 15px;
+			}
+			a{
+				font-weight: 500;
+				font-size: 14px;
+				color: #D3D3D3;
+			}
+		}
+	}
+	.popup-edmonton{
+		display: none;
+	}
+	.container-fluid{
+		padding-left: 0;
+		padding-right: 0;
+		.row{
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	.col-lg-12{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	h3{
+		font-size: 24px;
+		font-weight: 700;
+		color: $white;
+		margin-bottom: 30px;
+		line-height: 1.1;
+	}
+	.input,
+	.textarea{
+		max-width: 270px;
+		width: 100%;
+		margin-bottom: 9px;
+	}
+	input{
+		&[type="text"],
+		&[type="email"],
+		&[type="tel"]{
+			background: $white;
+			border: 1px solid #E7E7E7;
+			border-radius: 8px;
+			width: 100%;
+			height: 40px;
+			padding: 0 15px;
+
+		}
+	}
+	.button{
+		width: 155px;
+		height: 36px;
+		margin: 15px 0 0 auto;
+	}
+	textarea{
+		background: $white;
+		border: 1px solid #E7E7E7;
+		border-radius: 8px;
+		width: 100%;
+		height: 110px;
+		padding:15px;
+		resize: none;
+	}
+	ul.office{
+		li{
+			@include transition( 0.3s ease);
+			&:before{
+				@include transition( 0.3s ease);
+			}
+			&:hover,
+			&.active{
+				background: $gray-dark;
+				position: relative;
+				cursor: pointer;
+				&:before{
+					content: '';
+					width: 6px;
+					height: 100%;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					position: absolute;
+					background: $green;
+				}
+			}
+
+		}
+		a{
+			font-size: 16px;
+			font-weight: 700;
+			color: $white;
+			min-height: 40px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+	.footer-form{
+		padding: 55px 30px 110px;
+		margin: 0 0 0 auto;
+	}
+	.location{
+		padding: 65px 0px 110px;
+		background: #434343;
+		width: 300px;
+		a,
+		h3,
+		.hours{
+			padding: 0 40px;
+		}
+		h6{
+			font-weight: 700;
+			font-size: 16px;
+			color: $white;
+			line-height: 1.857;
+		}
+		p{
+			font-size: 14px;
+			color: $white;
+			line-height: 1.857;
+		}
+		.hours{
+			margin-top: 10px;
+		}
+	}
+	#map{
+		width: calc(50vw - 30px);
+	}
+
+}
